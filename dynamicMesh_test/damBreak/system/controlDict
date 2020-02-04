@@ -15,6 +15,9 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+//NEED TO INCLUDE THIS LIBRARY FOR 2D DYNAMIC MESH REFINEMENT!!!
+libs ("libdynamicRefine2D.so");
+
 application     interFoam;
 
 startFrom       startTime;

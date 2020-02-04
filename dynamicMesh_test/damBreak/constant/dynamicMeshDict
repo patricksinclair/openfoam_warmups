@@ -15,7 +15,16 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dynamicFvMesh   dynamicRefineFvMesh;
+//dynamicFvMesh   dynamicRefineFvMesh;
+
+dynamicFvMesh dynamicRefine2DFvMesh; //NEED TO CHANGE TO THIS TO WORK IN 2D
+
+
+//ALSO NEED TO INCLUDE ALL THIS STUFF BELOW INSIDE THIS LIST{}
+dynamicRefine2DFvMeshCoeffs{
+
+//ALSO ALSO NEED TO INCLUDE THIS KEYWORD
+nBufferLayersR 2;
 
 // How often to refine
 refineInterval  1;
@@ -53,6 +62,6 @@ correctFluxes
 
 // Write the refinement level as a volScalarField
 dumpLevel       true;
-
+};
 
 // ************************************************************************* //

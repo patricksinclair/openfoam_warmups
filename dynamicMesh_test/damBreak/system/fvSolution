@@ -54,19 +54,14 @@ solvers
         nSweeps         1;
     }
 
-    "(k|omega|B|nuTilda).*"
-    {
-        solver          smoothSolver;
-        smoother        symGaussSeidel;
-        tolerance       1e-08;
-        relTol          0;
-    }
+    
 }
 
 PIMPLE
 {
     momentumPredictor no;
     nCorrectors     3;
+    nOuterCorrectors    1;
     nNonOrthogonalCorrectors 0;
 
     pRefPoint      (0.51 0.51 0.51);
