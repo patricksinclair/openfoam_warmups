@@ -1,0 +1,1759 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-1ff648926f77
+Exec   : interFoam -parallel
+Date   : Feb 04 2020
+Time   : 13:12:19
+Host   : "patrick-XPS-13-7390"
+PID    : 11240
+I/O    : uncollated
+Case   : /home/patrick/OpenFOAM/patrick-7/run/warmups/damBreakWithObstacle
+nProcs : 4
+Slaves : 
+3
+(
+"patrick-XPS-13-7390.11241"
+"patrick-XPS-13-7390.11242"
+"patrick-XPS-13-7390.11243"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting dynamicFvMesh dynamicRefineFvMesh
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Operating solver in transient mode with 1 outer corrector
+PIMPLE: Operating solver in PISO mode
+
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Reading transportProperties
+
+Selecting incompressible transport model Newtonian
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+No finite volume options present
+GAMG:  Solving for pcorr, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+Constructing face velocity Uf
+
+Courant Number mean: 0 max: 0
+
+Starting time loop
+
+Courant Number mean: 0 max: 0
+Interface Courant Number mean: 0 max: 0
+deltaT = 0.00117647
+Time = 0.00117647
+
+Selected 1430 cells for refinement out of 32768.
+Refined from 32768 to 42778 cells.
+Selected 0 split points out of a possible 1430.
+GAMG:  Solving for pcorr, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = 0  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = 0  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = 0  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 1, Final residual = 0.00429801, No Iterations 1
+time step continuity errors : sum local = 0.0011294, global = -5.70491e-05, cumulative = -5.70491e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.00178832, Final residual = 1.09635e-05, No Iterations 4
+time step continuity errors : sum local = 7.01883e-06, global = -1.84099e-06, cumulative = -5.88901e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000190366, Final residual = 7.0937e-09, No Iterations 8
+time step continuity errors : sum local = 4.60436e-09, global = -1.04521e-09, cumulative = -5.88911e-05
+ExecutionTime = 0.29 s  ClockTime = 0 s
+
+Courant Number mean: 0.000299921 max: 0.121642
+Interface Courant Number mean: 0 max: 0
+deltaT = 0.00134454
+Time = 0.00252101
+
+Selected 5714 cells for refinement out of 42778.
+Refined from 42778 to 82776 cells.
+Selected 0 split points out of a possible 5714.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.40633e-05, No Iterations 10
+time step continuity errors : sum local = 4.14059e-09, global = -5.46734e-10, cumulative = -5.88917e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = 0  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.98063e-19  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.96126e-19  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00586667, Final residual = 1.69816e-05, No Iterations 2
+time step continuity errors : sum local = 2.43751e-05, global = -6.38323e-07, cumulative = -5.953e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.00069e-05, Final residual = 3.31968e-07, No Iterations 4
+time step continuity errors : sum local = 4.76428e-07, global = -7.35552e-08, cumulative = -5.96036e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.96214e-06, Final residual = 6.47488e-09, No Iterations 5
+time step continuity errors : sum local = 9.29246e-09, global = -1.66736e-09, cumulative = -5.96052e-05
+ExecutionTime = 0.85 s  ClockTime = 1 s
+
+Courant Number mean: 0.000478526 max: 0.182925
+Interface Courant Number mean: 8.13351e-06 max: 0.110202
+deltaT = 0.001589
+Time = 0.00411001
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.02736e-19  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.07569e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.64802e-19  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00163661, Final residual = 1.4603e-05, No Iterations 2
+time step continuity errors : sum local = 2.72671e-05, global = -9.66306e-08, cumulative = -5.97019e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.67908e-05, Final residual = 1.196e-07, No Iterations 5
+time step continuity errors : sum local = 2.23145e-07, global = 3.8386e-08, cumulative = -5.96635e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.02307e-06, Final residual = 9.28348e-09, No Iterations 5
+time step continuity errors : sum local = 1.73204e-08, global = 2.6896e-09, cumulative = -5.96608e-05
+ExecutionTime = 1.17 s  ClockTime = 1 s
+
+Courant Number mean: 0.000834532 max: 0.17511
+Interface Courant Number mean: 1.23875e-05 max: 0.133527
+deltaT = 0.00176555
+Time = 0.00587556
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.20924e-19  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.11977e-19  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.22799e-19  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00210718, Final residual = 4.68383e-06, No Iterations 2
+time step continuity errors : sum local = 1.00587e-05, global = 1.34823e-07, cumulative = -5.9526e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.73778e-06, Final residual = 2.64646e-08, No Iterations 6
+time step continuity errors : sum local = 5.67436e-08, global = 7.95761e-09, cumulative = -5.9518e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.55944e-06, Final residual = 7.77623e-09, No Iterations 3
+time step continuity errors : sum local = 1.66731e-08, global = 2.67165e-09, cumulative = -5.95153e-05
+ExecutionTime = 1.47 s  ClockTime = 2 s
+
+Courant Number mean: 0.00129633 max: 0.19754
+Interface Courant Number mean: 3.58689e-05 max: 0.19754
+deltaT = 0.00201778
+Time = 0.00789334
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.08726e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.32429e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.22765e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00330984, Final residual = 1.04723e-05, No Iterations 2
+time step continuity errors : sum local = 2.72407e-05, global = 1.85977e-07, cumulative = -5.93294e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.18529e-05, Final residual = 7.66204e-08, No Iterations 5
+time step continuity errors : sum local = 1.98782e-07, global = 4.22025e-08, cumulative = -5.92872e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.48532e-06, Final residual = 5.41667e-09, No Iterations 5
+time step continuity errors : sum local = 1.40523e-08, global = 2.21652e-09, cumulative = -5.92849e-05
+ExecutionTime = 1.79 s  ClockTime = 2 s
+
+Courant Number mean: 0.00198369 max: 0.268507
+Interface Courant Number mean: 6.45698e-05 max: 0.268507
+deltaT = 0.00201778
+Time = 0.00991112
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.02435e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.50279e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.69464e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00439419, Final residual = 8.68882e-06, No Iterations 2
+time step continuity errors : sum local = 2.10489e-05, global = 4.07519e-07, cumulative = -5.88774e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.00714e-05, Final residual = 4.58743e-08, No Iterations 6
+time step continuity errors : sum local = 1.10714e-07, global = 1.64247e-08, cumulative = -5.8861e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.8908e-06, Final residual = 4.78334e-09, No Iterations 4
+time step continuity errors : sum local = 1.15439e-08, global = 2.22066e-09, cumulative = -5.88588e-05
+ExecutionTime = 2.1 s  ClockTime = 2 s
+
+Courant Number mean: 0.00248872 max: 0.294415
+Interface Courant Number mean: 8.87208e-05 max: 0.294415
+deltaT = 0.00201778
+Time = 0.0119289
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.27112e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.24108e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.63054e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00573905, Final residual = 1.5474e-05, No Iterations 2
+time step continuity errors : sum local = 3.52301e-05, global = 5.86463e-07, cumulative = -5.82723e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.74156e-05, Final residual = 1.0798e-07, No Iterations 5
+time step continuity errors : sum local = 2.44591e-07, global = 5.45758e-08, cumulative = -5.82177e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.31365e-06, Final residual = 6.74022e-09, No Iterations 5
+time step continuity errors : sum local = 1.52661e-08, global = 2.41391e-09, cumulative = -5.82153e-05
+ExecutionTime = 2.42 s  ClockTime = 3 s
+
+Courant Number mean: 0.00298819 max: 0.311734
+Interface Courant Number mean: 0.000113172 max: 0.311734
+deltaT = 0.00201778
+Time = 0.0139467
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.36662e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.53135e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.98182e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00715241, Final residual = 1.31625e-05, No Iterations 2
+time step continuity errors : sum local = 2.80295e-05, global = 6.82135e-07, cumulative = -5.75332e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.5267e-05, Final residual = 6.72996e-08, No Iterations 6
+time step continuity errors : sum local = 1.42382e-07, global = 2.17877e-08, cumulative = -5.75114e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.52165e-06, Final residual = 7.63506e-09, No Iterations 4
+time step continuity errors : sum local = 1.61522e-08, global = 2.94029e-09, cumulative = -5.75085e-05
+ExecutionTime = 2.73 s  ClockTime = 3 s
+
+Courant Number mean: 0.00348396 max: 0.32582
+Interface Courant Number mean: 0.000138725 max: 0.32582
+deltaT = 0.00201778
+Time = 0.0159644
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.05016e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.15987e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.85045e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.00867821, Final residual = 2.10311e-05, No Iterations 2
+time step continuity errors : sum local = 4.21079e-05, global = 9.83131e-07, cumulative = -5.65253e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.3711e-05, Final residual = 1.43783e-07, No Iterations 5
+time step continuity errors : sum local = 2.85615e-07, global = 6.56683e-08, cumulative = -5.64597e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.52623e-06, Final residual = 8.36855e-09, No Iterations 5
+time step continuity errors : sum local = 1.66208e-08, global = 2.66325e-09, cumulative = -5.6457e-05
+ExecutionTime = 3.05 s  ClockTime = 3 s
+
+Courant Number mean: 0.00397624 max: 0.33629
+Interface Courant Number mean: 0.000166611 max: 0.335256
+deltaT = 0.00201778
+Time = 0.0179822
+
+Selected 0 cells for refinement out of 82776.
+Selected 0 split points out of a possible 5714.
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.56711e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.69355e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.75702e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0103282, Final residual = 1.81528e-05, No Iterations 2
+time step continuity errors : sum local = 3.43189e-05, global = 9.90597e-07, cumulative = -5.54664e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.15018e-05, Final residual = 2.12789e-07, No Iterations 5
+time step continuity errors : sum local = 3.98468e-07, global = 6.37504e-08, cumulative = -5.54027e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.49379e-06, Final residual = 5.18253e-09, No Iterations 5
+time step continuity errors : sum local = 9.7039e-09, global = 2.24945e-09, cumulative = -5.54004e-05
+ExecutionTime = 3.37 s  ClockTime = 4 s
+
+Courant Number mean: 0.00446585 max: 0.34527
+Interface Courant Number mean: 0.000193546 max: 0.341499
+deltaT = 0.00201778
+Time = 0.02
+
+Selected 42 cells for refinement out of 82776.
+Refined from 82776 to 83070 cells.
+Selected 0 split points out of a possible 5756.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.46767e-05, No Iterations 9
+time step continuity errors : sum local = 4.12723e-10, global = -4.18037e-11, cumulative = -5.54004e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.88644e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.75485e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.62484e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0120923, Final residual = 2.08815e-05, No Iterations 2
+time step continuity errors : sum local = 3.73364e-05, global = 1.10812e-06, cumulative = -5.42923e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.48856e-05, Final residual = 2.39492e-07, No Iterations 5
+time step continuity errors : sum local = 4.23443e-07, global = 6.9258e-08, cumulative = -5.42231e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.57957e-06, Final residual = 6.03944e-09, No Iterations 5
+time step continuity errors : sum local = 1.0677e-08, global = 2.51012e-09, cumulative = -5.42206e-05
+ExecutionTime = 3.91 s  ClockTime = 4 s
+
+Courant Number mean: 0.00496773 max: 0.35162
+Interface Courant Number mean: 0.000228103 max: 0.345026
+deltaT = 0.00222222
+Time = 0.0222222
+
+Selected 25 cells for refinement out of 83070.
+Refined from 83070 to 83245 cells.
+Selected 0 split points out of a possible 5781.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.95918e-05, No Iterations 9
+time step continuity errors : sum local = 4.02152e-10, global = -3.63946e-11, cumulative = -5.42206e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.2988e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.55459e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.32321e-17  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0153511, Final residual = 0.000153058, No Iterations 1
+time step continuity errors : sum local = 0.000312304, global = 1.41649e-06, cumulative = -5.28041e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000166896, Final residual = 7.50444e-07, No Iterations 5
+time step continuity errors : sum local = 1.50897e-06, global = 2.71919e-07, cumulative = -5.25322e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.78267e-05, Final residual = 3.87635e-09, No Iterations 6
+time step continuity errors : sum local = 7.79609e-09, global = 2.26811e-09, cumulative = -5.25299e-05
+ExecutionTime = 4.46 s  ClockTime = 5 s
+
+Courant Number mean: 0.00607213 max: 0.392745
+Interface Courant Number mean: 0.000288901 max: 0.3842
+deltaT = 0.00222222
+Time = 0.0244444
+
+Selected 37 cells for refinement out of 83245.
+Refined from 83245 to 83504 cells.
+Selected 0 split points out of a possible 5818.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.69263e-05, No Iterations 9
+time step continuity errors : sum local = 1.40778e-10, global = 1.97628e-11, cumulative = -5.25299e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.58938e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.73283e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.52201e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0177464, Final residual = 0.000175054, No Iterations 1
+time step continuity errors : sum local = 0.000337117, global = 1.50408e-06, cumulative = -5.10258e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000191678, Final residual = 8.44122e-07, No Iterations 5
+time step continuity errors : sum local = 1.59839e-06, global = 2.97947e-07, cumulative = -5.07279e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.22332e-05, Final residual = 4.0443e-09, No Iterations 6
+time step continuity errors : sum local = 7.65954e-09, global = 2.21783e-09, cumulative = -5.07256e-05
+ExecutionTime = 5.02 s  ClockTime = 5 s
+
+Courant Number mean: 0.00667312 max: 0.396254
+Interface Courant Number mean: 0.000338285 max: 0.384618
+deltaT = 0.00222222
+Time = 0.0266667
+
+Selected 13 cells for refinement out of 83504.
+Refined from 83504 to 83595 cells.
+Selected 0 split points out of a possible 5831.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.5507e-05, No Iterations 8
+time step continuity errors : sum local = 4.00651e-11, global = 8.05049e-12, cumulative = -5.07256e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.41514e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.19399e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.18961e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.020278, Final residual = 0.00019867, No Iterations 1
+time step continuity errors : sum local = 0.000361275, global = 1.84152e-06, cumulative = -4.88841e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000219528, Final residual = 9.45295e-07, No Iterations 5
+time step continuity errors : sum local = 1.68619e-06, global = 3.13152e-07, cumulative = -4.8571e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.70445e-05, Final residual = 4.39352e-09, No Iterations 6
+time step continuity errors : sum local = 7.83814e-09, global = 2.21187e-09, cumulative = -4.85687e-05
+ExecutionTime = 5.59 s  ClockTime = 6 s
+
+Courant Number mean: 0.00726215 max: 0.384012
+Interface Courant Number mean: 0.0003829 max: 0.371642
+deltaT = 0.00222222
+Time = 0.0288889
+
+Selected 43 cells for refinement out of 83595.
+Refined from 83595 to 83896 cells.
+Selected 0 split points out of a possible 5874.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.07428e-05, No Iterations 8
+time step continuity errors : sum local = 2.79649e-10, global = 3.87731e-11, cumulative = -4.85687e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.18015e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.36731e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.31652e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0226607, Final residual = 0.000225578, No Iterations 1
+time step continuity errors : sum local = 0.000385939, global = 1.91591e-06, cumulative = -4.66528e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000258262, Final residual = 1.06905e-06, No Iterations 5
+time step continuity errors : sum local = 1.79024e-06, global = 3.28354e-07, cumulative = -4.63244e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.41397e-05, Final residual = 6.4792e-09, No Iterations 6
+time step continuity errors : sum local = 1.08506e-08, global = 3.09e-09, cumulative = -4.63214e-05
+ExecutionTime = 6.15 s  ClockTime = 6 s
+
+Courant Number mean: 0.00784639 max: 0.343069
+Interface Courant Number mean: 0.000426948 max: 0.295337
+deltaT = 0.00222222
+Time = 0.0311111
+
+Selected 545 cells for refinement out of 83896.
+Refined from 83896 to 87711 cells.
+Selected 0 split points out of a possible 6419.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.04601e-05, No Iterations 12
+time step continuity errors : sum local = 1.16764e-09, global = -1.8852e-10, cumulative = -4.63215e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.46975e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.62931e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.51264e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0222853, Final residual = 4.08438e-05, No Iterations 2
+time step continuity errors : sum local = 7.19268e-05, global = 1.52112e-06, cumulative = -4.48004e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.76837e-05, Final residual = 4.13683e-07, No Iterations 5
+time step continuity errors : sum local = 7.14213e-07, global = 1.18408e-07, cumulative = -4.4682e-05
+GAMG:  Solving for p_rgh, Initial residual = 1.60954e-05, Final residual = 3.21074e-09, No Iterations 6
+time step continuity errors : sum local = 5.53892e-09, global = 1.52318e-09, cumulative = -4.46805e-05
+ExecutionTime = 6.77 s  ClockTime = 7 s
+
+Courant Number mean: 0.00857504 max: 0.328526
+Interface Courant Number mean: 0.000474718 max: 0.259627
+deltaT = 0.00222222
+Time = 0.0333333
+
+Selected 175 cells for refinement out of 87711.
+Refined from 87711 to 88936 cells.
+Selected 0 split points out of a possible 6594.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.74718e-05, No Iterations 9
+time step continuity errors : sum local = 1.66085e-09, global = -2.68051e-10, cumulative = -4.46808e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.80358e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.5248e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.70206e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0238805, Final residual = 5.10556e-05, No Iterations 2
+time step continuity errors : sum local = 8.44685e-05, global = 8.13583e-07, cumulative = -4.38672e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.57929e-05, Final residual = 5.75059e-07, No Iterations 5
+time step continuity errors : sum local = 9.31323e-07, global = 1.6264e-07, cumulative = -4.37045e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.13431e-05, Final residual = 5.29635e-09, No Iterations 6
+time step continuity errors : sum local = 8.56829e-09, global = 2.3125e-09, cumulative = -4.37022e-05
+ExecutionTime = 7.38 s  ClockTime = 8 s
+
+Courant Number mean: 0.00924863 max: 0.322434
+Interface Courant Number mean: 0.00060399 max: 0.262629
+deltaT = 0.00222222
+Time = 0.0355556
+
+Selected 50 cells for refinement out of 88936.
+Refined from 88936 to 89286 cells.
+Selected 0 split points out of a possible 6644.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.88072e-05, No Iterations 9
+time step continuity errors : sum local = 2.91016e-10, global = -2.89703e-11, cumulative = -4.37023e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.54074e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.0776e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.18626e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0246358, Final residual = 5.3777e-05, No Iterations 2
+time step continuity errors : sum local = 8.39509e-05, global = 9.38758e-07, cumulative = -4.27635e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.92397e-05, Final residual = 6.38622e-07, No Iterations 5
+time step continuity errors : sum local = 9.75525e-07, global = 1.61849e-07, cumulative = -4.26016e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.26616e-05, Final residual = 6.38162e-09, No Iterations 6
+time step continuity errors : sum local = 9.73768e-09, global = 1.75189e-09, cumulative = -4.25999e-05
+ExecutionTime = 7.99 s  ClockTime = 8 s
+
+Courant Number mean: 0.00987238 max: 0.325234
+Interface Courant Number mean: 0.000660974 max: 0.321043
+deltaT = 0.00222222
+Time = 0.0377778
+
+Selected 37 cells for refinement out of 89286.
+Refined from 89286 to 89545 cells.
+Selected 0 split points out of a possible 6681.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.33357e-05, No Iterations 9
+time step continuity errors : sum local = 3.17179e-10, global = -2.04695e-11, cumulative = -4.25999e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.51724e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.23278e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.06606e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0247778, Final residual = 5.4126e-05, No Iterations 2
+time step continuity errors : sum local = 7.98426e-05, global = 8.30656e-07, cumulative = -4.17693e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.06928e-05, Final residual = 6.35551e-07, No Iterations 5
+time step continuity errors : sum local = 9.17289e-07, global = 1.5444e-07, cumulative = -4.16148e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.3013e-05, Final residual = 6.67349e-09, No Iterations 6
+time step continuity errors : sum local = 9.62195e-09, global = 9.92809e-10, cumulative = -4.16138e-05
+ExecutionTime = 8.59 s  ClockTime = 9 s
+
+Courant Number mean: 0.0104889 max: 0.351681
+Interface Courant Number mean: 0.000720998 max: 0.331966
+deltaT = 0.00222222
+Time = 0.04
+
+Selected 48 cells for refinement out of 89545.
+Refined from 89545 to 89881 cells.
+Selected 0 split points out of a possible 6729.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.10445e-05, No Iterations 9
+time step continuity errors : sum local = 2.83329e-10, global = 6.77004e-12, cumulative = -4.16138e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.92185e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.70236e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.71208e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0242288, Final residual = 5.10198e-05, No Iterations 2
+time step continuity errors : sum local = 7.11746e-05, global = 6.52987e-07, cumulative = -4.09608e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.92035e-05, Final residual = 6.05335e-07, No Iterations 5
+time step continuity errors : sum local = 8.26533e-07, global = 1.38198e-07, cumulative = -4.08226e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.21795e-05, Final residual = 6.35256e-09, No Iterations 6
+time step continuity errors : sum local = 8.66632e-09, global = 2.46582e-10, cumulative = -4.08224e-05
+ExecutionTime = 9.19 s  ClockTime = 9 s
+
+Courant Number mean: 0.011118 max: 0.374781
+Interface Courant Number mean: 0.000774662 max: 0.347687
+deltaT = 0.0025
+Time = 0.0425
+
+Selected 59 cells for refinement out of 89881.
+Refined from 89881 to 90294 cells.
+Selected 0 split points out of a possible 6779.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.89361e-05, No Iterations 7
+time step continuity errors : sum local = 9.97174e-10, global = -2.22524e-10, cumulative = -4.08226e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.84594e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.23958e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.24919e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0254942, Final residual = 5.35901e-05, No Iterations 2
+time step continuity errors : sum local = 8.91384e-05, global = 6.15523e-07, cumulative = -4.02071e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.88179e-05, Final residual = 6.65458e-07, No Iterations 5
+time step continuity errors : sum local = 1.08236e-06, global = 1.82625e-07, cumulative = -4.00245e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.45935e-05, Final residual = 7.29249e-09, No Iterations 6
+time step continuity errors : sum local = 1.18537e-08, global = -1.197e-09, cumulative = -4.00257e-05
+ExecutionTime = 9.83 s  ClockTime = 10 s
+
+Courant Number mean: 0.0133052 max: 0.452305
+Interface Courant Number mean: 0.000949409 max: 0.419878
+deltaT = 0.0025
+Time = 0.045
+
+Selected 65 cells for refinement out of 90294.
+Refined from 90294 to 90749 cells.
+Selected 0 split points out of a possible 6834.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.96724e-05, No Iterations 8
+time step continuity errors : sum local = 1.08434e-09, global = -1.86767e-10, cumulative = -4.00258e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.4175e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.25308e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.71682e-18  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0247377, Final residual = 6.61124e-05, No Iterations 2
+time step continuity errors : sum local = 0.000105554, global = 1.90995e-07, cumulative = -3.98349e-05
+GAMG:  Solving for p_rgh, Initial residual = 9.80165e-05, Final residual = 4.12906e-07, No Iterations 6
+time step continuity errors : sum local = 6.44579e-07, global = 1.08461e-07, cumulative = -3.97264e-05
+GAMG:  Solving for p_rgh, Initial residual = 2.98547e-05, Final residual = 3.97062e-09, No Iterations 7
+time step continuity errors : sum local = 6.1972e-09, global = -1.17815e-09, cumulative = -3.97276e-05
+ExecutionTime = 10.46 s  ClockTime = 11 s
+
+Courant Number mean: 0.0141149 max: 0.47995
+Interface Courant Number mean: 0.00102117 max: 0.478558
+deltaT = 0.0025
+Time = 0.0475
+
+Selected 58 cells for refinement out of 90749.
+Refined from 90749 to 91155 cells.
+Selected 0 split points out of a possible 6888.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.45161e-05, No Iterations 8
+time step continuity errors : sum local = 7.77377e-10, global = -1.74766e-11, cumulative = -3.97276e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.43006e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.12326e-18  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.34251e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0220386, Final residual = 7.63262e-05, No Iterations 2
+time step continuity errors : sum local = 0.000117503, global = -2.53319e-07, cumulative = -3.99809e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000112046, Final residual = 5.74559e-07, No Iterations 6
+time step continuity errors : sum local = 8.71323e-07, global = 1.38647e-07, cumulative = -3.98423e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.44194e-05, Final residual = 5.95982e-09, No Iterations 7
+time step continuity errors : sum local = 9.0426e-09, global = -1.73133e-09, cumulative = -3.9844e-05
+ExecutionTime = 11.09 s  ClockTime = 11 s
+
+Courant Number mean: 0.0149167 max: 0.522287
+Interface Courant Number mean: 0.000980815 max: 0.499802
+deltaT = 0.00208333
+Time = 0.0495833
+
+Selected 79 cells for refinement out of 91155.
+Refined from 91155 to 91708 cells.
+Selected 0 split points out of a possible 6965.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.54534e-05, No Iterations 9
+time step continuity errors : sum local = 3.87602e-10, global = 2.9939e-11, cumulative = -3.9844e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.8829e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.75431e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.51229e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0239546, Final residual = 8.12571e-05, No Iterations 2
+time step continuity errors : sum local = 0.000100279, global = 6.02772e-07, cumulative = -3.92412e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000114652, Final residual = 8.07161e-07, No Iterations 6
+time step continuity errors : sum local = 9.73267e-07, global = 1.60192e-07, cumulative = -3.9081e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.80757e-05, Final residual = 7.01405e-09, No Iterations 7
+time step continuity errors : sum local = 8.46917e-09, global = -1.59696e-09, cumulative = -3.90826e-05
+ExecutionTime = 11.99 s  ClockTime = 12 s
+
+Courant Number mean: 0.0129971 max: 0.428703
+Interface Courant Number mean: 0.000861524 max: 0.406074
+deltaT = 0.00208333
+Time = 0.0516667
+
+Selected 72 cells for refinement out of 91708.
+Refined from 91708 to 92212 cells.
+Selected 19 split points out of a possible 7037.
+Unrefined from 92212 to 92079 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.8758e-05, No Iterations 9
+time step continuity errors : sum local = 4.71113e-10, global = 5.79291e-11, cumulative = -3.90825e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.85468e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.58583e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.32427e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0382919, Final residual = 0.000254569, No Iterations 1
+time step continuity errors : sum local = 0.000345062, global = 4.06445e-06, cumulative = -3.50181e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000306004, Final residual = 1.53447e-06, No Iterations 6
+time step continuity errors : sum local = 1.99471e-06, global = 3.17338e-07, cumulative = -3.47007e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.65415e-05, Final residual = 5.45731e-09, No Iterations 8
+time step continuity errors : sum local = 7.12844e-09, global = -1.36422e-09, cumulative = -3.47021e-05
+ExecutionTime = 13.01 s  ClockTime = 13 s
+
+Courant Number mean: 0.0135614 max: 0.428158
+Interface Courant Number mean: 0.0010158 max: 0.406715
+deltaT = 0.00208333
+Time = 0.05375
+
+Selected 38 cells for refinement out of 92079.
+Refined from 92079 to 92345 cells.
+Selected 8 split points out of a possible 7056.
+Unrefined from 92345 to 92289 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.53121e-05, No Iterations 9
+time step continuity errors : sum local = 2.957e-10, global = -6.1923e-11, cumulative = -3.47022e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.03783e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.69089e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.00213e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0382986, Final residual = 0.000282492, No Iterations 1
+time step continuity errors : sum local = 0.000354668, global = 3.4532e-06, cumulative = -3.1249e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000341255, Final residual = 1.5179e-06, No Iterations 6
+time step continuity errors : sum local = 1.83041e-06, global = 2.84994e-07, cumulative = -3.0964e-05
+GAMG:  Solving for p_rgh, Initial residual = 8.61382e-05, Final residual = 5.18644e-09, No Iterations 8
+time step continuity errors : sum local = 6.27635e-09, global = -1.2157e-09, cumulative = -3.09652e-05
+ExecutionTime = 13.86 s  ClockTime = 14 s
+
+Courant Number mean: 0.0141168 max: 0.453167
+Interface Courant Number mean: 0.00107568 max: 0.447172
+deltaT = 0.00208333
+Time = 0.0558333
+
+Selected 29 cells for refinement out of 92289.
+Refined from 92289 to 92492 cells.
+Selected 6 split points out of a possible 7077.
+Unrefined from 92492 to 92450 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.52903e-05, No Iterations 8
+time step continuity errors : sum local = 3.3971e-10, global = -4.65114e-11, cumulative = -3.09652e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.74741e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.55417e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.32921e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0366376, Final residual = 0.00027326, No Iterations 1
+time step continuity errors : sum local = 0.00031776, global = 2.8988e-06, cumulative = -2.80664e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000333438, Final residual = 2.95693e-06, No Iterations 5
+time step continuity errors : sum local = 3.31321e-06, global = 5.25918e-07, cumulative = -2.75405e-05
+GAMG:  Solving for p_rgh, Initial residual = 8.48356e-05, Final residual = 4.04589e-09, No Iterations 8
+time step continuity errors : sum local = 4.54235e-09, global = -8.06817e-10, cumulative = -2.75413e-05
+ExecutionTime = 15.03 s  ClockTime = 15 s
+
+Courant Number mean: 0.0146636 max: 0.458136
+Interface Courant Number mean: 0.00114 max: 0.440852
+deltaT = 0.00208333
+Time = 0.0579167
+
+Selected 105 cells for refinement out of 92450.
+Refined from 92450 to 93185 cells.
+Selected 4 split points out of a possible 7165.
+Unrefined from 93185 to 93157 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.38915e-05, No Iterations 9
+time step continuity errors : sum local = 2.11763e-09, global = -4.02882e-10, cumulative = -2.75417e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.01734e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.75115e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.63268e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0337839, Final residual = 0.000252865, No Iterations 1
+time step continuity errors : sum local = 0.000272918, global = 2.22242e-06, cumulative = -2.53193e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000306754, Final residual = 2.24589e-06, No Iterations 5
+time step continuity errors : sum local = 2.34684e-06, global = 3.64821e-07, cumulative = -2.49545e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.80188e-05, Final residual = 9.16433e-09, No Iterations 7
+time step continuity errors : sum local = 9.57884e-09, global = -1.7787e-09, cumulative = -2.49563e-05
+ExecutionTime = 15.93 s  ClockTime = 16 s
+
+Courant Number mean: 0.0152715 max: 0.464655
+Interface Courant Number mean: 0.00118376 max: 0.435938
+deltaT = 0.00208333
+Time = 0.06
+
+Selected 47 cells for refinement out of 93157.
+Refined from 93157 to 93486 cells.
+Selected 26 split points out of a possible 7205.
+Unrefined from 93486 to 93304 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.74331e-05, No Iterations 9
+time step continuity errors : sum local = 1.39501e-09, global = -2.4158e-10, cumulative = -2.49565e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.50927e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.96402e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.27143e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0297315, Final residual = 0.000253109, No Iterations 1
+time step continuity errors : sum local = 0.000257307, global = 1.52845e-06, cumulative = -2.34281e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000303319, Final residual = 1.80306e-06, No Iterations 5
+time step continuity errors : sum local = 1.78396e-06, global = 2.83354e-07, cumulative = -2.31447e-05
+GAMG:  Solving for p_rgh, Initial residual = 7.31379e-05, Final residual = 8.96456e-09, No Iterations 7
+time step continuity errors : sum local = 8.85876e-09, global = -1.66804e-09, cumulative = -2.31464e-05
+ExecutionTime = 16.77 s  ClockTime = 17 s
+
+Courant Number mean: 0.0158398 max: 0.494308
+Interface Courant Number mean: 0.00124548 max: 0.490368
+deltaT = 0.002
+Time = 0.062
+
+Selected 43 cells for refinement out of 93304.
+Refined from 93304 to 93605 cells.
+Selected 4 split points out of a possible 7228.
+Unrefined from 93605 to 93577 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.45162e-05, No Iterations 9
+time step continuity errors : sum local = 8.26876e-10, global = -6.66773e-11, cumulative = -2.31464e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.1693e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.11093e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.07576e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.026265, Final residual = 8.47287e-05, No Iterations 2
+time step continuity errors : sum local = 7.68016e-05, global = 7.85236e-07, cumulative = -2.23612e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000117925, Final residual = 9.28948e-07, No Iterations 5
+time step continuity errors : sum local = 8.25083e-07, global = 1.26848e-07, cumulative = -2.22344e-05
+GAMG:  Solving for p_rgh, Initial residual = 3.60935e-05, Final residual = 4.57029e-09, No Iterations 7
+time step continuity errors : sum local = 4.05319e-09, global = -7.50343e-10, cumulative = -2.22351e-05
+ExecutionTime = 17.62 s  ClockTime = 18 s
+
+Courant Number mean: 0.0157196 max: 0.47097
+Interface Courant Number mean: 0.0011391 max: 0.456329
+deltaT = 0.002
+Time = 0.064
+
+Selected 65 cells for refinement out of 93577.
+Refined from 93577 to 94032 cells.
+Selected 10 split points out of a possible 7289.
+Unrefined from 94032 to 93962 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.3223e-05, No Iterations 9
+time step continuity errors : sum local = 6.20011e-10, global = -8.99654e-11, cumulative = -2.22352e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.11455e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.07784e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.76483e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0203378, Final residual = 0.000137663, No Iterations 2
+time step continuity errors : sum local = 0.000130827, global = -2.70804e-07, cumulative = -2.2506e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000173967, Final residual = 1.1006e-06, No Iterations 5
+time step continuity errors : sum local = 1.02801e-06, global = 1.54535e-07, cumulative = -2.23515e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.19163e-05, Final residual = 7.9394e-09, No Iterations 7
+time step continuity errors : sum local = 7.40425e-09, global = -1.40512e-09, cumulative = -2.23529e-05
+ExecutionTime = 18.5 s  ClockTime = 19 s
+
+Courant Number mean: 0.0162494 max: 0.472414
+Interface Courant Number mean: 0.00117562 max: 0.465723
+deltaT = 0.002
+Time = 0.066
+
+Selected 102 cells for refinement out of 93962.
+Refined from 93962 to 94676 cells.
+Selected 429 split points out of a possible 7381.
+Unrefined from 94676 to 91673 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.72599e-05, No Iterations 9
+time step continuity errors : sum local = 7.81385e-10, global = -6.94273e-11, cumulative = -2.23529e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.41793e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.16816e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.98701e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0475899, Final residual = 0.000168274, No Iterations 2
+time step continuity errors : sum local = 0.000197591, global = 7.10643e-07, cumulative = -2.16423e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000211239, Final residual = 1.80069e-06, No Iterations 6
+time step continuity errors : sum local = 2.02051e-06, global = 3.30498e-07, cumulative = -2.13118e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.46015e-05, Final residual = 9.54322e-09, No Iterations 7
+time step continuity errors : sum local = 1.0688e-08, global = -1.90574e-09, cumulative = -2.13137e-05
+ExecutionTime = 19.38 s  ClockTime = 20 s
+
+Courant Number mean: 0.0166004 max: 0.491482
+Interface Courant Number mean: 0.00136156 max: 0.491482
+deltaT = 0.002
+Time = 0.068
+
+Selected 397 cells for refinement out of 91673.
+Refined from 91673 to 94452 cells.
+Selected 8 split points out of a possible 7351.
+Unrefined from 94452 to 94396 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.06314e-05, No Iterations 13
+time step continuity errors : sum local = 1.2626e-09, global = -1.93618e-10, cumulative = -2.13139e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.53063e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.96037e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.23174e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0428986, Final residual = 0.000135054, No Iterations 2
+time step continuity errors : sum local = 0.000155768, global = 2.11985e-06, cumulative = -1.91941e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000175099, Final residual = 1.4974e-06, No Iterations 6
+time step continuity errors : sum local = 1.65605e-06, global = 2.58694e-07, cumulative = -1.89354e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.60633e-05, Final residual = 4.07033e-09, No Iterations 8
+time step continuity errors : sum local = 4.5016e-09, global = -8.52216e-10, cumulative = -1.89362e-05
+ExecutionTime = 20.62 s  ClockTime = 21 s
+
+Courant Number mean: 0.017229 max: 0.494052
+Interface Courant Number mean: 0.00139193 max: 0.491574
+deltaT = 0.002
+Time = 0.07
+
+Selected 79 cells for refinement out of 94396.
+Refined from 94396 to 94949 cells.
+Selected 43 split points out of a possible 7401.
+Unrefined from 94949 to 94648 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.6299e-05, No Iterations 7
+time step continuity errors : sum local = 1.69481e-09, global = -2.10763e-10, cumulative = -1.89364e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.5519e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.9604e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.39971e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0391231, Final residual = 0.000122461, No Iterations 2
+time step continuity errors : sum local = 0.000130036, global = 1.15955e-06, cumulative = -1.77769e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.00016337, Final residual = 1.27673e-06, No Iterations 6
+time step continuity errors : sum local = 1.30543e-06, global = 2.01724e-07, cumulative = -1.75751e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.28805e-05, Final residual = 8.61706e-09, No Iterations 7
+time step continuity errors : sum local = 8.804e-09, global = -1.47571e-09, cumulative = -1.75766e-05
+ExecutionTime = 21.97 s  ClockTime = 22 s
+
+Courant Number mean: 0.0177433 max: 0.49665
+Interface Courant Number mean: 0.00145883 max: 0.470785
+deltaT = 0.002
+Time = 0.072
+
+Selected 74 cells for refinement out of 94648.
+Refined from 94648 to 95166 cells.
+Selected 30 split points out of a possible 7433.
+Unrefined from 95166 to 94956 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.36653e-05, No Iterations 9
+time step continuity errors : sum local = 7.88275e-10, global = -1.42642e-10, cumulative = -1.75768e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.24075e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -8.2006e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.29506e-16  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0333827, Final residual = 0.000110418, No Iterations 2
+time step continuity errors : sum local = 0.000109104, global = 8.50877e-07, cumulative = -1.67259e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000153322, Final residual = 1.09376e-06, No Iterations 6
+time step continuity errors : sum local = 1.04764e-06, global = 1.59945e-07, cumulative = -1.65659e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.12866e-05, Final residual = 7.64865e-09, No Iterations 7
+time step continuity errors : sum local = 7.31745e-09, global = -1.26749e-09, cumulative = -1.65672e-05
+ExecutionTime = 23.43 s  ClockTime = 24 s
+
+Courant Number mean: 0.0182883 max: 0.502289
+Interface Courant Number mean: 0.00149813 max: 0.485133
+deltaT = 0.0016
+Time = 0.0736
+
+Selected 67 cells for refinement out of 94956.
+Refined from 94956 to 95425 cells.
+Selected 18 split points out of a possible 7474.
+Unrefined from 95425 to 95299 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.43502e-05, No Iterations 9
+time step continuity errors : sum local = 5.97521e-10, global = 2.58158e-11, cumulative = -1.65672e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.02031e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.64088e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.31287e-16  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0249607, Final residual = 0.000113905, No Iterations 2
+time step continuity errors : sum local = 6.98187e-05, global = -2.23229e-07, cumulative = -1.67904e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000159851, Final residual = 1.11558e-06, No Iterations 6
+time step continuity errors : sum local = 6.69112e-07, global = 8.69227e-08, cumulative = -1.67035e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.4609e-05, Final residual = 7.10924e-09, No Iterations 7
+time step continuity errors : sum local = 4.25921e-09, global = -7.17424e-10, cumulative = -1.67042e-05
+ExecutionTime = 24.82 s  ClockTime = 25 s
+
+Courant Number mean: 0.0149665 max: 0.409714
+Interface Courant Number mean: 0.00122307 max: 0.409714
+deltaT = 0.0016
+Time = 0.0752
+
+Selected 87 cells for refinement out of 95299.
+Refined from 95299 to 95908 cells.
+Selected 21 split points out of a possible 7547.
+Unrefined from 95908 to 95761 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.03546e-05, No Iterations 9
+time step continuity errors : sum local = 8.64946e-10, global = 3.54087e-11, cumulative = -1.67042e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.0885e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.6208e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.36103e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.016976, Final residual = 0.000100431, No Iterations 2
+time step continuity errors : sum local = 6.17691e-05, global = -7.29544e-07, cumulative = -1.74337e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000136646, Final residual = 9.6331e-07, No Iterations 6
+time step continuity errors : sum local = 5.85707e-07, global = 7.22083e-08, cumulative = -1.73615e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.00465e-05, Final residual = 6.57677e-09, No Iterations 7
+time step continuity errors : sum local = 3.99576e-09, global = -6.66e-10, cumulative = -1.73622e-05
+ExecutionTime = 25.72 s  ClockTime = 26 s
+
+Courant Number mean: 0.0153145 max: 0.396244
+Interface Courant Number mean: 0.00115046 max: 0.390667
+deltaT = 0.0016
+Time = 0.0768
+
+Selected 50 cells for refinement out of 95761.
+Refined from 95761 to 96111 cells.
+Selected 19 split points out of a possible 7578.
+Unrefined from 96111 to 95978 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.55771e-05, No Iterations 9
+time step continuity errors : sum local = 4.08614e-10, global = -3.9458e-11, cumulative = -1.73622e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.72547e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.22592e-12  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.2618e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0441784, Final residual = 0.000115264, No Iterations 2
+time step continuity errors : sum local = 9.03801e-05, global = 6.51984e-07, cumulative = -1.67102e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000159682, Final residual = 1.28399e-06, No Iterations 6
+time step continuity errors : sum local = 9.6432e-07, global = 1.32871e-07, cumulative = -1.65774e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.92247e-05, Final residual = 9.06543e-09, No Iterations 7
+time step continuity errors : sum local = 6.8022e-09, global = -1.04446e-09, cumulative = -1.65784e-05
+ExecutionTime = 26.7 s  ClockTime = 27 s
+
+Courant Number mean: 0.0156572 max: 0.395785
+Interface Courant Number mean: 0.00118215 max: 0.394922
+deltaT = 0.0016
+Time = 0.0784
+
+Selected 69 cells for refinement out of 95978.
+Refined from 95978 to 96461 cells.
+Selected 43 split points out of a possible 7629.
+Unrefined from 96461 to 96160 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.03245e-05, No Iterations 9
+time step continuity errors : sum local = 4.92857e-10, global = 5.27639e-11, cumulative = -1.65783e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.05096e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.85985e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.85656e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0431604, Final residual = 0.000108092, No Iterations 2
+time step continuity errors : sum local = 7.77967e-05, global = 7.23402e-07, cumulative = -1.58549e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000147449, Final residual = 1.28951e-06, No Iterations 6
+time step continuity errors : sum local = 8.90342e-07, global = 1.06613e-07, cumulative = -1.57483e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.6457e-05, Final residual = 7.94744e-09, No Iterations 7
+time step continuity errors : sum local = 5.48083e-09, global = -8.15542e-10, cumulative = -1.57491e-05
+ExecutionTime = 28.28 s  ClockTime = 28 s
+
+Courant Number mean: 0.0159764 max: 0.407781
+Interface Courant Number mean: 0.00133006 max: 0.397418
+deltaT = 0.0016
+Time = 0.08
+
+Selected 67 cells for refinement out of 96160.
+Refined from 96160 to 96629 cells.
+Selected 24 split points out of a possible 7654.
+Unrefined from 96629 to 96461 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.49243e-05, No Iterations 10
+time step continuity errors : sum local = 1.49666e-09, global = -1.92192e-10, cumulative = -1.57493e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.61418e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.42743e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.2542e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0403032, Final residual = 0.000105821, No Iterations 2
+time step continuity errors : sum local = 7.03722e-05, global = 7.89236e-07, cumulative = -1.49601e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000146875, Final residual = 1.28482e-06, No Iterations 6
+time step continuity errors : sum local = 8.22112e-07, global = 9.90817e-08, cumulative = -1.4861e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.39797e-05, Final residual = 7.2409e-09, No Iterations 7
+time step continuity errors : sum local = 4.62726e-09, global = -7.08974e-10, cumulative = -1.48617e-05
+ExecutionTime = 30.2 s  ClockTime = 30 s
+
+Courant Number mean: 0.0163302 max: 0.444763
+Interface Courant Number mean: 0.0013541 max: 0.444763
+deltaT = 0.00166667
+Time = 0.0816667
+
+Selected 54 cells for refinement out of 96461.
+Refined from 96461 to 96839 cells.
+Selected 26 split points out of a possible 7680.
+Unrefined from 96839 to 96657 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.27601e-05, No Iterations 9
+time step continuity errors : sum local = 9.61687e-10, global = -1.31831e-10, cumulative = -1.48619e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.04002e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.84664e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.34084e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0370446, Final residual = 9.82187e-05, No Iterations 2
+time step continuity errors : sum local = 6.56002e-05, global = 7.4581e-07, cumulative = -1.41161e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000136586, Final residual = 1.19128e-06, No Iterations 6
+time step continuity errors : sum local = 7.68522e-07, global = 9.03662e-08, cumulative = -1.40257e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.0686e-05, Final residual = 6.8299e-09, No Iterations 7
+time step continuity errors : sum local = 4.40043e-09, global = -6.84414e-10, cumulative = -1.40264e-05
+ExecutionTime = 31.67 s  ClockTime = 32 s
+
+Courant Number mean: 0.0173769 max: 0.461636
+Interface Courant Number mean: 0.00145282 max: 0.461636
+deltaT = 0.00166667
+Time = 0.0833333
+
+Selected 68 cells for refinement out of 96657.
+Refined from 96657 to 97133 cells.
+Selected 34 split points out of a possible 7726.
+Unrefined from 97133 to 96895 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.55415e-05, No Iterations 9
+time step continuity errors : sum local = 1.31966e-09, global = -1.39569e-10, cumulative = -1.40265e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.5096e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.36216e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.25172e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0338254, Final residual = 0.000131563, No Iterations 2
+time step continuity errors : sum local = 8.39404e-05, global = -3.95383e-07, cumulative = -1.44219e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000181818, Final residual = 1.64068e-06, No Iterations 6
+time step continuity errors : sum local = 1.01454e-06, global = 1.12345e-07, cumulative = -1.43095e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.97309e-05, Final residual = 3.94034e-09, No Iterations 8
+time step continuity errors : sum local = 2.43324e-09, global = -4.01277e-10, cumulative = -1.43099e-05
+ExecutionTime = 32.8 s  ClockTime = 33 s
+
+Courant Number mean: 0.0177478 max: 0.48098
+Interface Courant Number mean: 0.00148173 max: 0.461807
+deltaT = 0.00166667
+Time = 0.085
+
+Selected 45 cells for refinement out of 96895.
+Refined from 96895 to 97210 cells.
+Selected 17 split points out of a possible 7738.
+Unrefined from 97210 to 97091 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.84006e-05, No Iterations 9
+time step continuity errors : sum local = 8.95314e-10, global = -7.59328e-11, cumulative = -1.431e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.5362e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.32839e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.07324e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.026179, Final residual = 0.000144446, No Iterations 2
+time step continuity errors : sum local = 9.00617e-05, global = -9.60468e-07, cumulative = -1.52705e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000194051, Final residual = 1.70139e-06, No Iterations 6
+time step continuity errors : sum local = 1.04263e-06, global = 1.14636e-07, cumulative = -1.51559e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.28112e-05, Final residual = 4.84759e-09, No Iterations 8
+time step continuity errors : sum local = 2.96799e-09, global = -4.82953e-10, cumulative = -1.51563e-05
+ExecutionTime = 33.77 s  ClockTime = 34 s
+
+Courant Number mean: 0.0181114 max: 0.435904
+Interface Courant Number mean: 0.00137847 max: 0.416066
+deltaT = 0.00166667
+Time = 0.0866667
+
+Selected 94 cells for refinement out of 97091.
+Refined from 97091 to 97749 cells.
+Selected 547 split points out of a possible 7814.
+Unrefined from 97749 to 93920 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.54754e-05, No Iterations 10
+time step continuity errors : sum local = 5.30526e-10, global = -2.74918e-11, cumulative = -1.51564e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.44157e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.20495e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.84236e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0515343, Final residual = 0.000495182, No Iterations 1
+time step continuity errors : sum local = 0.000414775, global = 4.96343e-07, cumulative = -1.466e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000582138, Final residual = 4.03852e-06, No Iterations 5
+time step continuity errors : sum local = 3.20357e-06, global = 4.30416e-07, cumulative = -1.42296e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000110635, Final residual = 5.87639e-09, No Iterations 9
+time step continuity errors : sum local = 4.67319e-09, global = -8.08997e-10, cumulative = -1.42304e-05
+ExecutionTime = 35 s  ClockTime = 35 s
+
+Courant Number mean: 0.018122 max: 0.473978
+Interface Courant Number mean: 0.00142478 max: 0.473978
+deltaT = 0.00166667
+Time = 0.0883333
+
+Selected 524 cells for refinement out of 93920.
+Refined from 93920 to 97588 cells.
+Selected 61 split points out of a possible 7789.
+Unrefined from 97588 to 97161 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.87494e-05, No Iterations 13
+time step continuity errors : sum local = 1.91871e-09, global = -2.53175e-10, cumulative = -1.42307e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.50434e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.76606e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.60165e-16  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0460119, Final residual = 0.000143111, No Iterations 2
+time step continuity errors : sum local = 0.000118007, global = 8.64066e-07, cumulative = -1.33666e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000182388, Final residual = 1.53629e-06, No Iterations 5
+time step continuity errors : sum local = 1.21106e-06, global = 1.7312e-07, cumulative = -1.31935e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.61713e-05, Final residual = 6.44173e-09, No Iterations 8
+time step continuity errors : sum local = 5.07466e-09, global = -9.14393e-10, cumulative = -1.31944e-05
+ExecutionTime = 36.2 s  ClockTime = 36 s
+
+Courant Number mean: 0.018718 max: 0.45955
+Interface Courant Number mean: 0.00158434 max: 0.457649
+deltaT = 0.00166667
+Time = 0.09
+
+Selected 62 cells for refinement out of 97161.
+Refined from 97161 to 97595 cells.
+Selected 27 split points out of a possible 7785.
+Unrefined from 97595 to 97406 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.75843e-05, No Iterations 9
+time step continuity errors : sum local = 9.47096e-10, global = -1.24059e-10, cumulative = -1.31945e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.9994e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.31881e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.55602e-13  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0416495, Final residual = 0.000141389, No Iterations 2
+time step continuity errors : sum local = 0.000108093, global = 3.77473e-07, cumulative = -1.2817e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000183398, Final residual = 1.44622e-06, No Iterations 5
+time step continuity errors : sum local = 1.06164e-06, global = 1.47247e-07, cumulative = -1.26698e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.70542e-05, Final residual = 6.65481e-09, No Iterations 8
+time step continuity errors : sum local = 4.87975e-09, global = -9.4868e-10, cumulative = -1.26708e-05
+ExecutionTime = 37.22 s  ClockTime = 37 s
+
+Courant Number mean: 0.019085 max: 0.467833
+Interface Courant Number mean: 0.00162861 max: 0.451272
+deltaT = 0.00166667
+Time = 0.0916667
+
+Selected 59 cells for refinement out of 97406.
+Refined from 97406 to 97819 cells.
+Selected 20 split points out of a possible 7815.
+Unrefined from 97819 to 97679 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.62738e-05, No Iterations 9
+time step continuity errors : sum local = 7.43545e-10, global = -5.89818e-11, cumulative = -1.26708e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.02013e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.479e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.08e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0348274, Final residual = 0.000121573, No Iterations 2
+time step continuity errors : sum local = 8.66281e-05, global = 4.04997e-07, cumulative = -1.22658e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000161182, Final residual = 1.32259e-06, No Iterations 5
+time step continuity errors : sum local = 9.11663e-07, global = 1.28847e-07, cumulative = -1.2137e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.13894e-05, Final residual = 6.08092e-09, No Iterations 8
+time step continuity errors : sum local = 4.18798e-09, global = -7.73191e-10, cumulative = -1.21377e-05
+ExecutionTime = 38.17 s  ClockTime = 38 s
+
+Courant Number mean: 0.0194571 max: 0.480411
+Interface Courant Number mean: 0.0016572 max: 0.454846
+deltaT = 0.00166667
+Time = 0.0933333
+
+Selected 73 cells for refinement out of 97679.
+Refined from 97679 to 98190 cells.
+Selected 60 split points out of a possible 7860.
+Unrefined from 98190 to 97770 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.38098e-05, No Iterations 10
+time step continuity errors : sum local = 8.43681e-10, global = 7.21304e-11, cumulative = -1.21377e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.56406e-16  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.35911e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.60405e-16  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0301828, Final residual = 0.000144154, No Iterations 2
+time step continuity errors : sum local = 9.91644e-05, global = 3.84915e-08, cumulative = -1.20992e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000191437, Final residual = 8.38578e-07, No Iterations 6
+time step continuity errors : sum local = 5.60888e-07, global = 7.7777e-08, cumulative = -1.20214e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.29554e-05, Final residual = 9.08025e-09, No Iterations 8
+time step continuity errors : sum local = 6.07187e-09, global = -1.05728e-09, cumulative = -1.20225e-05
+ExecutionTime = 39.15 s  ClockTime = 39 s
+
+Courant Number mean: 0.0198194 max: 0.467419
+Interface Courant Number mean: 0.00159864 max: 0.467419
+deltaT = 0.00166667
+Time = 0.095
+
+Selected 77 cells for refinement out of 97770.
+Refined from 97770 to 98309 cells.
+Selected 59 split points out of a possible 7880.
+Unrefined from 98309 to 97896 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.58916e-05, No Iterations 9
+time step continuity errors : sum local = 1.26607e-09, global = 1.03828e-11, cumulative = -1.20224e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.19215e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.35651e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.94229e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0192897, Final residual = 0.000111747, No Iterations 2
+time step continuity errors : sum local = 7.87611e-05, global = -2.59242e-07, cumulative = -1.22817e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000153115, Final residual = 1.1262e-06, No Iterations 6
+time step continuity errors : sum local = 7.7825e-07, global = 9.73201e-08, cumulative = -1.21844e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.56311e-05, Final residual = 4.32083e-09, No Iterations 9
+time step continuity errors : sum local = 2.99154e-09, global = -5.40837e-10, cumulative = -1.21849e-05
+ExecutionTime = 40.14 s  ClockTime = 40 s
+
+Courant Number mean: 0.0201728 max: 0.476555
+Interface Courant Number mean: 0.00158722 max: 0.476555
+deltaT = 0.00166667
+Time = 0.0966667
+
+Selected 62 cells for refinement out of 97896.
+Refined from 97896 to 98330 cells.
+Selected 46 split points out of a possible 7882.
+Unrefined from 98330 to 98008 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.44928e-05, No Iterations 9
+time step continuity errors : sum local = 9.07e-10, global = -2.43415e-11, cumulative = -1.21849e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.92411e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.67865e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.18698e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0520634, Final residual = 0.000433205, No Iterations 1
+time step continuity errors : sum local = 0.000361764, global = -1.3147e-06, cumulative = -1.34996e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000527885, Final residual = 4.75603e-06, No Iterations 5
+time step continuity errors : sum local = 3.75289e-06, global = 5.34645e-07, cumulative = -1.2965e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000114782, Final residual = 4.22903e-09, No Iterations 10
+time step continuity errors : sum local = 3.35256e-09, global = -5.74735e-10, cumulative = -1.29656e-05
+ExecutionTime = 41.12 s  ClockTime = 41 s
+
+Courant Number mean: 0.0205246 max: 0.500223
+Interface Courant Number mean: 0.00176825 max: 0.482213
+deltaT = 0.00166667
+Time = 0.0983333
+
+Selected 46 cells for refinement out of 98008.
+Refined from 98008 to 98330 cells.
+Selected 30 split points out of a possible 7885.
+Unrefined from 98330 to 98120 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.84989e-05, No Iterations 8
+time step continuity errors : sum local = 4.11109e-10, global = 5.76879e-11, cumulative = -1.29655e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.85167e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.53849e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.0344e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0471712, Final residual = 0.000399735, No Iterations 1
+time step continuity errors : sum local = 0.000304837, global = 3.03285e-07, cumulative = -1.26622e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000489374, Final residual = 3.39215e-06, No Iterations 5
+time step continuity errors : sum local = 2.46364e-06, global = 3.36315e-07, cumulative = -1.23259e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000103242, Final residual = 6.75122e-09, No Iterations 9
+time step continuity errors : sum local = 4.91188e-09, global = -8.05661e-10, cumulative = -1.23267e-05
+ExecutionTime = 42.09 s  ClockTime = 42 s
+
+Courant Number mean: 0.0208825 max: 0.493982
+Interface Courant Number mean: 0.00179627 max: 0.493982
+deltaT = 0.00166667
+Time = 0.1
+
+Selected 116 cells for refinement out of 98120.
+Refined from 98120 to 98932 cells.
+Selected 30 split points out of a possible 7976.
+Unrefined from 98932 to 98722 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.21565e-05, No Iterations 10
+time step continuity errors : sum local = 2.87638e-09, global = -1.51945e-10, cumulative = -1.23269e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.2873e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.34594e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.14882e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0397369, Final residual = 0.000378599, No Iterations 1
+time step continuity errors : sum local = 0.000266254, global = 3.84953e-07, cumulative = -1.19419e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000457681, Final residual = 2.67218e-06, No Iterations 5
+time step continuity errors : sum local = 1.80917e-06, global = 2.5859e-07, cumulative = -1.16833e-05
+GAMG:  Solving for p_rgh, Initial residual = 9.74004e-05, Final residual = 5.05687e-09, No Iterations 9
+time step continuity errors : sum local = 3.42005e-09, global = -5.79141e-10, cumulative = -1.16839e-05
+ExecutionTime = 43.07 s  ClockTime = 43 s
+
+Courant Number mean: 0.0212878 max: 0.504685
+Interface Courant Number mean: 0.00183542 max: 0.498102
+deltaT = 0.00153846
+Time = 0.101538
+
+Selected 85 cells for refinement out of 98722.
+Refined from 98722 to 99317 cells.
+Selected 36 split points out of a possible 8032.
+Unrefined from 99317 to 99065 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.10283e-05, No Iterations 10
+time step continuity errors : sum local = 8.2423e-10, global = 1.41764e-11, cumulative = -1.16839e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.88793e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.01675e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.41664e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0317536, Final residual = 0.000122277, No Iterations 2
+time step continuity errors : sum local = 7.04575e-05, global = 8.22623e-08, cumulative = -1.16016e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000165411, Final residual = 1.61828e-06, No Iterations 5
+time step continuity errors : sum local = 9.05837e-07, global = 1.15765e-07, cumulative = -1.14859e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.94701e-05, Final residual = 7.58046e-09, No Iterations 8
+time step continuity errors : sum local = 4.23527e-09, global = -6.95321e-10, cumulative = -1.14866e-05
+ExecutionTime = 44.07 s  ClockTime = 44 s
+
+Courant Number mean: 0.0199696 max: 0.454453
+Interface Courant Number mean: 0.00170053 max: 0.451287
+deltaT = 0.00167832
+Time = 0.103217
+
+Selected 56 cells for refinement out of 99065.
+Refined from 99065 to 99457 cells.
+Selected 44 split points out of a possible 8055.
+Unrefined from 99457 to 99149 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.68298e-05, No Iterations 9
+time step continuity errors : sum local = 7.85755e-10, global = -8.67871e-11, cumulative = -1.14866e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.04628e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.4563e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.25589e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0192025, Final residual = 0.000140634, No Iterations 2
+time step continuity errors : sum local = 9.6397e-05, global = -4.64646e-07, cumulative = -1.19513e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000178313, Final residual = 1.68251e-06, No Iterations 5
+time step continuity errors : sum local = 1.13487e-06, global = 1.50531e-07, cumulative = -1.18008e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.79389e-05, Final residual = 9.65601e-09, No Iterations 8
+time step continuity errors : sum local = 6.50232e-09, global = -1.05905e-09, cumulative = -1.18018e-05
+ExecutionTime = 45.06 s  ClockTime = 45 s
+
+Courant Number mean: 0.0221388 max: 0.505186
+Interface Courant Number mean: 0.00175363 max: 0.489726
+deltaT = 0.00152575
+Time = 0.104743
+
+Selected 178 cells for refinement out of 99149.
+Refined from 99149 to 100395 cells.
+Selected 440 split points out of a possible 8160.
+Unrefined from 100395 to 97315 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.20348e-05, No Iterations 11
+time step continuity errors : sum local = 7.19656e-10, global = -7.94291e-11, cumulative = -1.18019e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.28216e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.51278e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.11917e-13  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0504529, Final residual = 0.000198827, No Iterations 2
+time step continuity errors : sum local = 0.000141642, global = 9.99702e-08, cumulative = -1.17019e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000250257, Final residual = 1.10055e-06, No Iterations 6
+time step continuity errors : sum local = 7.45971e-07, global = 1.03257e-07, cumulative = -1.15987e-05
+GAMG:  Solving for p_rgh, Initial residual = 6.54713e-05, Final residual = 7.32383e-09, No Iterations 8
+time step continuity errors : sum local = 4.95679e-09, global = -8.06809e-10, cumulative = -1.15995e-05
+ExecutionTime = 46.05 s  ClockTime = 46 s
+
+Courant Number mean: 0.0202788 max: 0.457979
+Interface Courant Number mean: 0.00177703 max: 0.457979
+deltaT = 0.00152575
+Time = 0.106268
+
+Selected 318 cells for refinement out of 97315.
+Refined from 97315 to 99541 cells.
+Selected 54 split points out of a possible 8061.
+Unrefined from 99541 to 99163 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.52181e-05, No Iterations 13
+time step continuity errors : sum local = 1.161e-09, global = -1.49342e-10, cumulative = -1.15996e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.01253e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.16053e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -8.28776e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0435693, Final residual = 0.000156253, No Iterations 2
+time step continuity errors : sum local = 0.000106915, global = 3.86304e-07, cumulative = -1.12133e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000203598, Final residual = 8.91041e-07, No Iterations 6
+time step continuity errors : sum local = 5.84072e-07, global = 8.29023e-08, cumulative = -1.11304e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.29572e-05, Final residual = 5.13043e-09, No Iterations 8
+time step continuity errors : sum local = 3.36096e-09, global = -6.12445e-10, cumulative = -1.1131e-05
+ExecutionTime = 47.04 s  ClockTime = 47 s
+
+Courant Number mean: 0.0206685 max: 0.440908
+Interface Courant Number mean: 0.00179631 max: 0.434074
+deltaT = 0.00152575
+Time = 0.107794
+
+Selected 81 cells for refinement out of 99163.
+Refined from 99163 to 99730 cells.
+Selected 38 split points out of a possible 8085.
+Unrefined from 99730 to 99464 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.73303e-05, No Iterations 10
+time step continuity errors : sum local = 1.32058e-09, global = 8.6037e-12, cumulative = -1.1131e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.49852e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.78449e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.13851e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.036597, Final residual = 0.00013072, No Iterations 2
+time step continuity errors : sum local = 8.32307e-05, global = 7.01253e-07, cumulative = -1.04298e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000174509, Final residual = 1.58902e-06, No Iterations 5
+time step continuity errors : sum local = 9.76923e-07, global = 1.53655e-07, cumulative = -1.02761e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.617e-05, Final residual = 7.49121e-09, No Iterations 7
+time step continuity errors : sum local = 4.59947e-09, global = -8.40331e-10, cumulative = -1.0277e-05
+ExecutionTime = 48.36 s  ClockTime = 49 s
+
+Courant Number mean: 0.0209782 max: 0.447423
+Interface Courant Number mean: 0.00182545 max: 0.43088
+deltaT = 0.00152575
+Time = 0.10932
+
+Selected 78 cells for refinement out of 99464.
+Refined from 99464 to 100010 cells.
+Selected 46 split points out of a possible 8107.
+Unrefined from 100010 to 99688 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.68491e-05, No Iterations 8
+time step continuity errors : sum local = 1.11743e-09, global = -1.39979e-10, cumulative = -1.02771e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.55537e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.49294e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -4.55016e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0313531, Final residual = 0.000136011, No Iterations 2
+time step continuity errors : sum local = 8.25529e-05, global = -1.22307e-08, cumulative = -1.02893e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000183478, Final residual = 1.81778e-06, No Iterations 5
+time step continuity errors : sum local = 1.07145e-06, global = 1.53659e-07, cumulative = -1.01357e-05
+GAMG:  Solving for p_rgh, Initial residual = 5.32171e-05, Final residual = 9.33583e-09, No Iterations 7
+time step continuity errors : sum local = 5.4945e-09, global = -9.96273e-10, cumulative = -1.01367e-05
+ExecutionTime = 49.99 s  ClockTime = 50 s
+
+Courant Number mean: 0.0212719 max: 0.469845
+Interface Courant Number mean: 0.00180489 max: 0.466799
+deltaT = 0.00152575
+Time = 0.110846
+
+Selected 85 cells for refinement out of 99688.
+Refined from 99688 to 100283 cells.
+Selected 29 split points out of a possible 8133.
+Unrefined from 100283 to 100080 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 9.01247e-05, No Iterations 9
+time step continuity errors : sum local = 1.36018e-09, global = -9.95169e-11, cumulative = -1.01368e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.01931e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -9.495e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.37469e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0176542, Final residual = 0.000104742, No Iterations 2
+time step continuity errors : sum local = 6.34529e-05, global = -4.34312e-07, cumulative = -1.05711e-05
+GAMG:  Solving for p_rgh, Initial residual = 0.000144503, Final residual = 7.13502e-07, No Iterations 6
+time step continuity errors : sum local = 4.25381e-07, global = 5.61332e-08, cumulative = -1.05149e-05
+GAMG:  Solving for p_rgh, Initial residual = 4.63996e-05, Final residual = 4.20546e-09, No Iterations 8
+time step continuity errors : sum local = 2.5063e-09, global = -4.64668e-10, cumulative = -1.05154e-05
+ExecutionTime = 51.73 s  ClockTime = 52 s
+
+Courant Number mean: 0.0216033 max: 0.445897
+Interface Courant Number mean: 0.0017194 max: 0.445897
+deltaT = 0.00152575
+Time = 0.112371
+
+Selected 75 cells for refinement out of 100080.
+Refined from 100080 to 100605 cells.
+Selected 36 split points out of a possible 8176.
+Unrefined from 100605 to 100353 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.08234e-05, No Iterations 9
+time step continuity errors : sum local = 7.97923e-10, global = -5.33197e-11, cumulative = -1.05155e-05
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.05493e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.7655e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.50353e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0526194, Final residual = 0.000161536, No Iterations 2
+time step continuity errors : sum local = 0.000115185, global = 9.00083e-07, cumulative = -9.61538e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000222294, Final residual = 9.11858e-07, No Iterations 6
+time step continuity errors : sum local = 6.16961e-07, global = 7.65045e-08, cumulative = -9.53887e-06
+GAMG:  Solving for p_rgh, Initial residual = 6.80032e-05, Final residual = 6.74174e-09, No Iterations 8
+time step continuity errors : sum local = 4.55615e-09, global = -7.42283e-10, cumulative = -9.53961e-06
+ExecutionTime = 53.49 s  ClockTime = 54 s
+
+Courant Number mean: 0.0219236 max: 0.452493
+Interface Courant Number mean: 0.001921 max: 0.436583
+deltaT = 0.00152575
+Time = 0.113897
+
+Selected 51 cells for refinement out of 100353.
+Refined from 100353 to 100710 cells.
+Selected 33 split points out of a possible 8193.
+Unrefined from 100710 to 100479 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.82882e-05, No Iterations 9
+time step continuity errors : sum local = 4.403e-10, global = -1.06142e-11, cumulative = -9.53962e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.44778e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.83933e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.85765e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0471023, Final residual = 0.000138048, No Iterations 2
+time step continuity errors : sum local = 8.96128e-05, global = 3.67383e-08, cumulative = -9.50289e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000196332, Final residual = 1.81811e-06, No Iterations 5
+time step continuity errors : sum local = 1.127e-06, global = 1.50415e-07, cumulative = -9.35247e-06
+GAMG:  Solving for p_rgh, Initial residual = 6.09969e-05, Final residual = 5.03238e-09, No Iterations 8
+time step continuity errors : sum local = 3.11484e-09, global = -5.51828e-10, cumulative = -9.35302e-06
+ExecutionTime = 55.2 s  ClockTime = 55 s
+
+Courant Number mean: 0.0222249 max: 0.458278
+Interface Courant Number mean: 0.00194717 max: 0.456953
+deltaT = 0.00152575
+Time = 0.115423
+
+Selected 65 cells for refinement out of 100479.
+Refined from 100479 to 100934 cells.
+Selected 40 split points out of a possible 8222.
+Unrefined from 100934 to 100654 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.58589e-05, No Iterations 9
+time step continuity errors : sum local = 6.76506e-10, global = 2.1954e-11, cumulative = -9.353e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -5.47909e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.89602e-15  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -7.32395e-15  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0385533, Final residual = 0.000118147, No Iterations 2
+time step continuity errors : sum local = 7.10445e-05, global = 5.70242e-07, cumulative = -8.78276e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000167099, Final residual = 1.4673e-06, No Iterations 5
+time step continuity errors : sum local = 8.50356e-07, global = 1.19036e-07, cumulative = -8.66372e-06
+GAMG:  Solving for p_rgh, Initial residual = 5.1003e-05, Final residual = 4.17198e-09, No Iterations 8
+time step continuity errors : sum local = 2.41446e-09, global = -4.11389e-10, cumulative = -8.66413e-06
+ExecutionTime = 56.93 s  ClockTime = 57 s
+
+Courant Number mean: 0.0225209 max: 0.458338
+Interface Courant Number mean: 0.00196239 max: 0.458338
+deltaT = 0.00152575
+Time = 0.116949
+
+Selected 73 cells for refinement out of 100654.
+Refined from 100654 to 101165 cells.
+Selected 76 split points out of a possible 8250.
+Unrefined from 101165 to 100633 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.97166e-05, No Iterations 9
+time step continuity errors : sum local = 1.75964e-09, global = -2.61113e-10, cumulative = -8.6644e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.02815e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.01847e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -6.18709e-13  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.031058, Final residual = 0.000148601, No Iterations 2
+time step continuity errors : sum local = 8.5305e-05, global = -2.99882e-07, cumulative = -8.96428e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000205453, Final residual = 1.87864e-06, No Iterations 5
+time step continuity errors : sum local = 1.05095e-06, global = 1.42304e-07, cumulative = -8.82197e-06
+GAMG:  Solving for p_rgh, Initial residual = 6.71126e-05, Final residual = 5.32682e-09, No Iterations 8
+time step continuity errors : sum local = 2.97622e-09, global = -4.90741e-10, cumulative = -8.82246e-06
+ExecutionTime = 58.7 s  ClockTime = 59 s
+
+Courant Number mean: 0.0227973 max: 0.482646
+Interface Courant Number mean: 0.00182701 max: 0.469768
+deltaT = 0.00152575
+Time = 0.118474
+
+Selected 85 cells for refinement out of 100633.
+Refined from 100633 to 101228 cells.
+Selected 436 split points out of a possible 8254.
+Unrefined from 101228 to 98176 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 4.92386e-05, No Iterations 10
+time step continuity errors : sum local = 1.11279e-09, global = -1.05716e-10, cumulative = -8.82257e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.73809e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.68451e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.20025e-13  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0523154, Final residual = 0.000141507, No Iterations 2
+time step continuity errors : sum local = 0.000101204, global = 1.86692e-06, cumulative = -6.95565e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000192372, Final residual = 8.18589e-07, No Iterations 6
+time step continuity errors : sum local = 5.5526e-07, global = 8.141e-08, cumulative = -6.87424e-06
+GAMG:  Solving for p_rgh, Initial residual = 6.59842e-05, Final residual = 5.96763e-09, No Iterations 8
+time step continuity errors : sum local = 4.04617e-09, global = -7.02581e-10, cumulative = -6.87494e-06
+ExecutionTime = 60.63 s  ClockTime = 61 s
+
+Courant Number mean: 0.0228041 max: 0.482236
+Interface Courant Number mean: 0.00186047 max: 0.471862
+deltaT = 0.00152575
+Time = 0.12
+
+Selected 571 cells for refinement out of 98176.
+Refined from 98176 to 102173 cells.
+Selected 161 split points out of a possible 8398.
+Unrefined from 102173 to 101046 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.76684e-05, No Iterations 13
+time step continuity errors : sum local = 2.90922e-09, global = -3.67694e-10, cumulative = -6.87531e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.52038e-12  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.20174e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.03483e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0503746, Final residual = 0.000146614, No Iterations 2
+time step continuity errors : sum local = 0.000105718, global = 4.38649e-07, cumulative = -6.43666e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000194166, Final residual = 1.49663e-06, No Iterations 5
+time step continuity errors : sum local = 1.02575e-06, global = 1.48521e-07, cumulative = -6.28814e-06
+GAMG:  Solving for p_rgh, Initial residual = 5.8436e-05, Final residual = 5.36646e-09, No Iterations 8
+time step continuity errors : sum local = 3.67519e-09, global = -6.26041e-10, cumulative = -6.28876e-06
+ExecutionTime = 62.52 s  ClockTime = 63 s
+
+Courant Number mean: 0.0233402 max: 0.476619
+Interface Courant Number mean: 0.00205121 max: 0.476619
+deltaT = 0.00153846
+Time = 0.121538
+
+Selected 51 cells for refinement out of 101046.
+Refined from 101046 to 101403 cells.
+Selected 46 split points out of a possible 8287.
+Unrefined from 101403 to 101081 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 5.83348e-05, No Iterations 10
+time step continuity errors : sum local = 5.43302e-10, global = -2.48707e-11, cumulative = -6.28879e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -3.19749e-13  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.7335e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.60003e-14  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0431742, Final residual = 0.000119429, No Iterations 2
+time step continuity errors : sum local = 8.03399e-05, global = 5.78074e-07, cumulative = -5.71071e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000166704, Final residual = 1.14612e-06, No Iterations 5
+time step continuity errors : sum local = 7.38731e-07, global = 1.18084e-07, cumulative = -5.59263e-06
+GAMG:  Solving for p_rgh, Initial residual = 4.86529e-05, Final residual = 8.63168e-09, No Iterations 7
+time step continuity errors : sum local = 5.5574e-09, global = -1.05308e-09, cumulative = -5.59368e-06
+ExecutionTime = 64.33 s  ClockTime = 65 s
+
+Courant Number mean: 0.0238306 max: 0.473253
+Interface Courant Number mean: 0.00209676 max: 0.458061
+deltaT = 0.00153846
+Time = 0.123077
+
+Selected 100 cells for refinement out of 101081.
+Refined from 101081 to 101781 cells.
+Selected 35 split points out of a possible 8341.
+Unrefined from 101781 to 101536 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 7.74411e-05, No Iterations 10
+time step continuity errors : sum local = 1.56536e-09, global = 5.81041e-11, cumulative = -5.59363e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.61234e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.77617e-14  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.66235e-11  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0344953, Final residual = 0.000109975, No Iterations 2
+time step continuity errors : sum local = 6.92532e-05, global = 4.0992e-07, cumulative = -5.1837e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000154703, Final residual = 1.26817e-06, No Iterations 5
+time step continuity errors : sum local = 7.72025e-07, global = 1.20006e-07, cumulative = -5.0637e-06
+GAMG:  Solving for p_rgh, Initial residual = 4.61097e-05, Final residual = 9.68069e-09, No Iterations 7
+time step continuity errors : sum local = 5.89076e-09, global = -1.08495e-09, cumulative = -5.06478e-06
+ExecutionTime = 66.11 s  ClockTime = 66 s
+
+Courant Number mean: 0.0241659 max: 0.455502
+Interface Courant Number mean: 0.00212253 max: 0.452734
+deltaT = 0.00153846
+Time = 0.124615
+
+Selected 85 cells for refinement out of 101536.
+Refined from 101536 to 102131 cells.
+Selected 33 split points out of a possible 8394.
+Unrefined from 102131 to 101900 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 6.55366e-05, No Iterations 10
+time step continuity errors : sum local = 1.12804e-09, global = -4.11872e-11, cumulative = -5.06483e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.61768e-11  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.42785e-11  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.25168e-11  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0206705, Final residual = 0.00010822, No Iterations 2
+time step continuity errors : sum local = 6.67964e-05, global = -3.95097e-07, cumulative = -5.45992e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000148302, Final residual = 9.47768e-07, No Iterations 6
+time step continuity errors : sum local = 5.74447e-07, global = 8.57579e-08, cumulative = -5.37416e-06
+GAMG:  Solving for p_rgh, Initial residual = 4.89751e-05, Final residual = 8.03481e-09, No Iterations 8
+time step continuity errors : sum local = 4.8791e-09, global = -8.42484e-10, cumulative = -5.37501e-06
+ExecutionTime = 67.91 s  ClockTime = 68 s
+
+Courant Number mean: 0.0244902 max: 0.481295
+Interface Courant Number mean: 0.00196317 max: 0.481295
+deltaT = 0.00153846
+Time = 0.126154
+
+Selected 81 cells for refinement out of 101900.
+Refined from 101900 to 102467 cells.
+Selected 55 split points out of a possible 8431.
+Unrefined from 102467 to 102082 cells.
+GAMG:  Solving for pcorr, Initial residual = 1, Final residual = 8.72403e-05, No Iterations 9
+time step continuity errors : sum local = 1.65322e-09, global = 1.75259e-11, cumulative = -5.37499e-06
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -2.08113e-11  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.91995e-11  Max(alpha.water) = 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.0834961  Min(alpha.water) = -1.74397e-11  Max(alpha.water) = 1
+GAMG:  Solving for p_rgh, Initial residual = 0.057088, Final residual = 0.000496184, No Iterations 1
+time step continuity errors : sum local = 0.000359316, global = 3.19817e-07, cumulative = -5.05517e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000610297, Final residual = 4.85692e-06, No Iterations 5
+time step continuity errors : sum local = 3.30186e-06, global = 5.11542e-07, cumulative = -4.54363e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.000144141, Final residual = 7.84627e-09, No Iterations 9
+time step continuity errors : sum local = 5.36274e-09, global = -8.55311e-10, cumulative = -4.54449e-06
+ExecutionTime = 69.74 s  ClockTime = 70 s
+
+Courant Number mean: 0.0247917 max: 0.490332
+Interface Courant Number mean: 0.00218939 max: 0.487598
+deltaT = 0.00153846
+Time = 0.127692
+
+Selected 82 cells for refinement out of 102082.
